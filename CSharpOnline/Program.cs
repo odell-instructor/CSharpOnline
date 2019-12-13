@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharpOnline.Lessons;
 
 namespace CSharpOnline
 {
@@ -6,8 +7,16 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            House myHouse = new House();
+            MyLesson5Examples();
+           // Console.WriteLine("Hello World!");
+           // House myHouse = new House();
+        }
+
+        static void MyLesson5Examples()
+        {
+            Lesson5 myFive = new Lesson5();
+            myFive.ConvertFloatToInt();
+            myFive.LongFromInt();
         }
     }
 }
