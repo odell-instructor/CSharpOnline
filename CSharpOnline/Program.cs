@@ -7,11 +7,36 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson7Examples();
+            BottlesOfBeerSong();
+            //MyLesson8Examples();
+            //MyLesson7Examples();
             //MyLesson6Examples();
             //MyLesson5Examples();
            // Console.WriteLine("Hello World!");
            // House myHouse = new House();
+        }
+
+        static void BottlesOfBeerSong()
+        {
+            BottlesOfBeer beer = new BottlesOfBeer();
+            Console.WriteLine(beer.LetsSing());
+        }
+
+        static void MyLesson8Examples()
+        {
+            Lesson8 myEight = new Lesson8();
+            myEight.BasicIfStatement();
+            myEight.BasicIfElseStatement(23);
+            Console.WriteLine(myEight.BasicIfElseChainExample(22));
+            Console.WriteLine(myEight.BasicAndConditionExample());
+            Console.WriteLine(myEight.BasicOrCondition(25));
+            myEight.BasicTernaryExample(42);
+            myEight.BasicSwitchExample(3);
+            myEight.BasicWhileLoop();
+            myEight.BasicDoWhileExample();
+            myEight.BasicForLoopExample(4);
+            myEight.BasicForEachExample();
+            myEight.BasicJumpStatements();
         }
 
         static void MyLesson7Examples()
