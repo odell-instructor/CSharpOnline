@@ -7,13 +7,23 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            BottlesOfBeerSong();
+            MyLesson9Examples();
+            // BottlesOfBeerSong();
             //MyLesson8Examples();
             //MyLesson7Examples();
             //MyLesson6Examples();
             //MyLesson5Examples();
            // Console.WriteLine("Hello World!");
            // House myHouse = new House();
+        }
+
+        static void MyLesson9Examples()
+        {
+            Lesson9 myNine = new Lesson9();
+            myNine.BasicArray();
+            myNine.MultiArray2D();
+            myNine.My3DArray();
+            myNine.MyJaggedArray();
         }
 
         static void BottlesOfBeerSong()
