@@ -16,11 +16,14 @@ namespace CSharpOnline
          This method will print out
          about what the door does.
              */
-        void DoorOpenClose()
+        public virtual void DoorOpenClose()
         {
             Console.WriteLine("The door opens");
         }
-
+        public void DoorOpenClose(string doorColor)
+        {
+            Console.WriteLine("My door color is {0}", doorColor);
+        }
 
     }
 }
