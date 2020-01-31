@@ -18,10 +18,10 @@ namespace CSharpOnline.Lessons
         short _myShortValue = 6;
 
         // range -2,147,483,648 to 2,147,483,647
-        int _myIntValue = 25000;
+        protected int _myIntValue = 25000;
 
         // range -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
-        long _myLongValue = 12345789L;
+        internal long _myLongValue = 12345789L;
 
         // Integral - Unsigned
 
