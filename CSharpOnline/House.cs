@@ -7,10 +7,46 @@ namespace CSharpOnline
     class House
     {
         // Attributes of the class
-        int _windowSize;
-        string _foundation;
-        string _roofType;
-        string _doorColor;
+        protected int windowSize;
+        protected string foundation;
+        //private string _roofType;
+        //private string _doorColor;
+
+        public int WindowSize
+        {
+            get { return windowSize; }
+            private set { windowSize = value; }
+        }
+
+        public string Foundation
+        {
+            get { return foundation; }
+            set { foundation = value; }
+        }
+
+        public string RoofType { get; set; }
+
+        public string DoorColor { get; set; }
+
+        public House() 
+            : this(25, "concrete")
+        {
+
+        }
+
+        public House(int windowSize, string foundation)
+            : this(windowSize, foundation, "composite", "Red")
+        {
+            
+        }
+
+        public House(int windowSize, string foundation, string roofType, string doorColor)
+        {
+            this.windowSize = windowSize;
+            this.foundation = foundation;
+            RoofType = roofType;
+            DoorColor = doorColor;
+        }
 
         /*
          This method will print out

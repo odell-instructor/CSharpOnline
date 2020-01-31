@@ -10,6 +10,24 @@ namespace CSharpOnline
     {
         string _balcony;
 
+        public string Balcony
+        {
+            get { return _balcony; }
+            set { _balcony = value; }
+        }
+
+        public Condo()
+            : this("second floor")
+        {
+
+        }
+
+        public Condo(string balcony)
+            : base(32, "straw")
+        {
+            Balcony = balcony;
+        }
+
         public void Maintenance()
         {
             Console.WriteLine("Fixing Condo stuff");
@@ -17,6 +35,7 @@ namespace CSharpOnline
 
         public override void DoorOpenClose()
         {
+            base.DoorOpenClose();
             Console.WriteLine("The door creaks");
         }
 
