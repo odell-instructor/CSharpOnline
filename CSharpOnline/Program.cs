@@ -7,7 +7,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson14Examples();
+            MyLesson15Examples();
+            //MyLesson14Examples();
             //MyLesson13Examples();
             //MyLesson12Examples();
             //MyLesson11Examples();
@@ -20,6 +21,22 @@ namespace CSharpOnline
             //MyLesson5Examples();
            // Console.WriteLine("Hello World!");
            // House myHouse = new House();
+        }
+
+        static void MyLesson15Examples()
+        {
+            Lesson15 my15 = new Lesson15();
+            my15.BasicEnumCasting();
+            my15.MyFavoriteFlavor(Lesson15.IceCreamFlavors.ChocolateChip);
+            // Constants cannot be altered, but can be used.
+            Console.WriteLine(Lesson15.words);
+            my15[2] = 17;
+
+            for(int i = 0; i < my15.ConeArrayLength; i++)
+            {
+                Console.WriteLine("The Value of {0} = {1}", i, my15[i]);
+            }
+
         }
 
         static void MyLesson14Examples()
