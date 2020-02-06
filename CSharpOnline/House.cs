@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpOnline
 {
-    class House
+    public class House
     {
         // Attributes of the class
         protected int windowSize;

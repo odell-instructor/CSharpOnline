@@ -7,7 +7,8 @@ namespace CSharpOnline
     {
         static void Main(string[] args)
         {
-            MyLesson17Examples();
+            MyLesson18Examples();
+            //MyLesson17Examples();
             //MyLesson16Examples();
             //MyLesson15Examples();
             //MyLesson14Examples();
@@ -23,6 +24,15 @@ namespace CSharpOnline
             //MyLesson5Examples();
            // Console.WriteLine("Hello World!");
            // House myHouse = new House();
+        }
+
+        static void MyLesson18Examples()
+        {
+            Lesson18 my18 = new Lesson18();
+            House testHouse = null;
+            //my18.MyThrowExample(testHouse);
+            //my18.MyException(testHouse);
+            my18.MyArrayException();
         }
 
         public delegate void TryOn(string val);
