@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpDesignPatterns
 {
@@ -6,9 +7,46 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            SingletonDemo();
+            FacadeDemo();
+           // DecoratorDemo();
+            //AdapterDemo();
+            //SingletonDemo();
             //BuilderDemo();
             //AbstractFactoryDemo();
+        }
+
+        static void FacadeDemo()
+        {
+            BikeFacade facade = new BikeFacade();
+            facade.PrepareForSale(new Downhill(new WideWheel(20), BikeColor.Red));
+        }
+
+        static void DecoratorDemo()
+        {
+            IBicycle tourBike = new Touring(new NarrowWheel(23));
+            Console.WriteLine(tourBike);
+
+            tourBike = new GoldFrame(tourBike);
+            Console.WriteLine(tourBike);
+
+            tourBike = new CustomGrip(tourBike);
+            Console.WriteLine(tourBike);
+        }
+
+        static void AdapterDemo()
+        {
+            IList<IWheel> wheels = new List<IWheel>();
+            wheels.Add(new NarrowWheel(24));
+            wheels.Add(new NarrowWheel(20));
+            wheels.Add(new WideWheel(24));
+
+            UltraWheel ultraWheel = new UltraWheel(22);
+            wheels.Add(new UltraWheelAdapter(ultraWheel));
+
+            foreach (IWheel item in wheels)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         static void SingletonDemo()

@@ -21,6 +21,21 @@ namespace CSharpDesignPatterns
             this.ColorType = color;
         }
 
+        public virtual void CleanFrame()
+        {
+            Console.WriteLine("Cleaning Frame....");
+        }
+
+        public virtual void AirTires()
+        {
+            Console.WriteLine("Airing up Tires....");
+        }
+
+        public virtual void TestRide()
+        {
+            Console.WriteLine("Taking bike for a test ride....");
+        }
+
         public override string ToString()
         {
             return this.GetType().Name + " Bicycle has a " + Wheel +

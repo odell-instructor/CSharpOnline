@@ -12,5 +12,9 @@ namespace CSharpDesignPatterns
 
         void Paint(BikeColor color);
 
+        void CleanFrame();
+        void AirTires();
+        void TestRide();
+
     } // end interface
 } // end namespace
