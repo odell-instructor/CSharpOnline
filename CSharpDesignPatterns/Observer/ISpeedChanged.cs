@@ -4,9 +4,8 @@ using System.Text;
 
 namespace CSharpDesignPatterns
 {
-    public interface IWheel : IVisitable
+    public interface ISpeedChanged
     {
-        int Size { get; }
-        bool Wide { get; }
+        void ValueHasChanged(object sender, EventArgs args);
     } // end interface
 } // end namespace
